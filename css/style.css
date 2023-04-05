@@ -317,6 +317,10 @@ body {
 
 /* clients */
 
+.clients {
+  border: 1px solid #dadada;
+}
+
 .clients-item {
   flex-direction: column;
   width: 370px;
@@ -360,11 +364,25 @@ body {
 
 .clients-name {
   margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 180%;
+  color: #1c1c1c;
+}
+
+.clients-post {
+  font-size: 14px;
+  line-height: 180%;
+  color: #787878;
 }
 
 /* ------------------------ */
 
 /* contacts */
+
+.contacts {
+  border: 1px solid #dadada;
+}
 
 .contacts-address {
   font-style: normal;
@@ -373,23 +391,48 @@ body {
 .contacts-item {
   flex-direction: column;
   width: 370px;
-  outline: 1px solid coral;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 29px 29px;
+  padding-top: 48px;
 }
 
 .contacts-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
+.contacts-item-address {
+  background-image: url("../img/section-contacts/contacts-icon/vector-mark.svg");
+}
+
+.contacts-item-call {
+  background-image: url("../img//section-contacts/contacts-icon/vector-phone.svg");
+}
+
+.contacts-item-mail {
+  background-image: url("../img/section-contacts/contacts-icon/vector-email.svg");
+}
+
 .contacts-item-caption {
   margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 180%;
+  color: #1c1c1c;
 }
 
 .contacts-item-text {
   margin: 0;
+  max-width: 215px;
+  font-size: 14px;
+  line-height: 180%;
+  color: #787878;
 }
 
-.contacts-item-link:not(:last-child) {
-  margin-bottom: 5px;
+.contacts-item-link {
+  font-size: 14px;
+  line-height: 180%;
+  color: #787878;
 }
 
 /* ------------------------ */
@@ -414,8 +457,50 @@ body {
   margin-right: 25px;
 }
 
+.footer-copy {
+  font-size: 12px;
+  line-height: 180%;
+  color: #787878;
+}
+
 .footer-item:not(:last-child) {
   margin-right: 28px;
+}
+
+.footer-nav {
+  margin-right: 56px;
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  color: #787878;
+}
+
+.social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.social-link-twitter {
+  background-image: url("../img//footer/social-link/twitter.svg");
+}
+
+.social-link-linkedin {
+  background-image: url("../img/footer/social-link/in.svg");
+}
+
+.social-link-mail {
+  background-image: url("../img/footer/social-link/mail.svg");
 }
 
 /* ------------------------ */
